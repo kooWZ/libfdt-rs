@@ -41,6 +41,7 @@ fn main() {
         .use_core()
         .ctypes_prefix("myctypes")
         .header("wrapper.h")
+        .clang_arg("-I/usr/include/aarch64-linux-gnu")
         .generate()
         .unwrap();
 
